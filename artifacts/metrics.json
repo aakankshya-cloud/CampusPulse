@@ -1,0 +1,89 @@
+{
+  "source": "synthetic",
+  "target_description": "Invented 20\u201380 score; not a real survey",
+  "warning": "Synthetic scores demonstrate software only. No real-world validity.",
+  "selected_model": "Ridge regression",
+  "comparison": [
+    {
+      "model": "Mean baseline",
+      "cv_mae": 8.627708892801587,
+      "cv_std": 0.7559726234196082
+    },
+    {
+      "model": "Ridge regression",
+      "cv_mae": 5.858174120006465,
+      "cv_std": 0.5077683429776162
+    },
+    {
+      "model": "Random forest",
+      "cv_mae": 6.052011507011765,
+      "cv_std": 0.5462973470261305
+    }
+  ],
+  "holdout": {
+    "mae": 5.660933939241246,
+    "rmse": 7.427184708733723,
+    "r2": 0.46471718429412257,
+    "baseline_mae": 8.3222212816406
+  },
+  "train_students": 144,
+  "test_students": 36,
+  "train_rows": 864,
+  "test_rows": 216,
+  "student_overlap": 0,
+  "features": [
+    "sleep_hours",
+    "active_minutes",
+    "social_minutes",
+    "screen_hours",
+    "study_hours",
+    "routine_variability"
+  ],
+  "importance": [
+    {
+      "feature": "sleep_hours",
+      "label": "Sleep (hours/day)",
+      "mae_increase": 0.03257725146282042,
+      "std": 0.040128994172370744
+    },
+    {
+      "feature": "active_minutes",
+      "label": "Activity (minutes/day)",
+      "mae_increase": 0.26338746895643494,
+      "std": 0.06448350067633216
+    },
+    {
+      "feature": "social_minutes",
+      "label": "Social time (minutes/day)",
+      "mae_increase": 2.789743032569163,
+      "std": 0.2539833965706626
+    },
+    {
+      "feature": "screen_hours",
+      "label": "Screen time (hours/day)",
+      "mae_increase": 0.42154073297669226,
+      "std": 0.12552525613097548
+    },
+    {
+      "feature": "study_hours",
+      "label": "Study (hours/day)",
+      "mae_increase": 0.00342331909548077,
+      "std": 0.0044856224762466835
+    },
+    {
+      "feature": "routine_variability",
+      "label": "Bedtime variability (hours)",
+      "mae_increase": 0.19126032481574862,
+      "std": 0.08382817792910255
+    }
+  ],
+  "dataset_sha256": "2c986a20410f620ab874b4f97fae4c086a143e94862b04dcbd8ab01994c51580",
+  "evaluation": "5-fold participant-grouped CV for selection, separate 20% student holdout.",
+  "limitations": [
+    "Observational associations are not causal.",
+    "No diagnostic thresholds, clinical accuracy, or treatment effectiveness established.",
+    "No demographic fairness audit: sensitive attributes were not supplied.",
+    "Generalization to other campuses and future weeks is untested.",
+    "The holdout evaluates unseen students, not forecasting future weeks."
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "source": "studentlife_real",
+  "target_description": "Post-study revised UCLA 20-item total; 10 positive items reversed including Q4.",
+  "warning": "Research prototype. External validity is unestablished.",
+  "selected_model": "Ridge regression",
+  "comparison": [
+    {
+      "model": "Mean baseline",
+      "cv_mae": 9.909379509379509,
+      "cv_std": 3.3291161694325484
+    },
+    {
+      "model": "Ridge regression",
+      "cv_mae": 9.858995520780557,
+      "cv_std": 2.7258173557209853
+    },
+    {
+      "model": "Random forest",
+      "cv_mae": 9.949331846240176,
+      "cv_std": 3.2290177878060673
+    }
+  ],
+  "holdout": {
+    "mae": 9.91227486780818,
+    "rmse": 11.713362480011213,
+    "r2": -0.19795797733759568,
+    "baseline_mae": 9.201058201058201
+  },
+  "train_students": 27,
+  "test_students": 7,
+  "train_rows": 27,
+  "test_rows": 7,
+  "student_overlap": 0,
+  "features": [
+    "reported_sleep_hours",
+    "sleep_duration_sd",
+    "conversation_event_minutes",
+    "phone_locked_hours"
+  ],
+  "importance": [
+    {
+      "feature": "reported_sleep_hours",
+      "label": "Reported sleep duration",
+      "mae_increase": -0.06679676361523779,
+      "std": 0.10247817254522538
+    },
+    {
+      "feature": "sleep_duration_sd",
+      "label": "Sleep duration variability",
+      "mae_increase": -0.2264491871259502,
+      "std": 0.5732468897412305
+    },
+    {
+      "feature": "conversation_event_minutes",
+      "label": "Detected conversation on recorded days",
+      "mae_increase": -0.47832534048459896,
+      "std": 1.0688294543569998
+    },
+    {
+      "feature": "phone_locked_hours",
+      "label": "Phone locked on recorded days",
+      "mae_increase": 1.1127598301532935,
+      "std": 0.5067396396264501
+    }
+  ],
+  "dataset_sha256": "2901645133f1ce13a2a312b3c889f06a25023356b77ad5ea2a7e54eee0ff22c0",
+  "evaluation": "5-fold participant-grouped CV for selection, separate 20% student holdout.",
+  "limitations": [
+    "Observational associations are not causal.",
+    "No diagnostic thresholds, clinical accuracy, or treatment effectiveness established.",
+    "No demographic fairness audit: sensitive attributes were not supplied.",
+    "Generalization to other campuses and future weeks is untested.",
+    "The holdout evaluates unseen students, not forecasting future weeks.",
+    "Small single-campus observational cohort; no clinical validation.",
+    "Survey table provides pre/post type, not individual completion timestamps. Early four-week window precedes intended end-term survey; exact individual ordering cannot be audited.",
+    "Sleep is self-reported EMA, not passive sensing. Left-censored <3-hour responses and invalid codes excluded; this can bias sleep summaries.",
+    "Conversation and phone-lock means use days with recorded events only. Missing event-days are not assumed to be zero and complete sensor coverage is unknown.",
+    "Detected conversation is not total social time. Locked duration is not screen time.",
+    "Only participants with >=7 observed days per channel are included; coverage filtering may introduce selection bias.",
+    "Features are four-week averages; single-day user inputs are out of task.",
+    "Different target scale from GLOBEM: no pooling or cross-dataset accuracy claim."
+  ],
+  "scale": [
+    20,
+    80
+  ],
+  "feature_schema": [
+    {
+      "id": "reported_sleep_hours",
+      "label": "Reported sleep duration",
+      "unit": "hours/night",
+      "min": 0,
+      "max": 12,
+      "step": 0.1,
+      "default": 6.15
+    },
+    {
+      "id": "sleep_duration_sd",
+      "label": "Sleep duration variability",
+      "unit": "hours (SD)",
+      "min": 0,
+      "max": 6,
+      "step": 0.1,
+      "default": 0.6214127824190987
+    },
+    {
+      "id": "conversation_event_minutes",
+      "label": "Detected conversation on recorded days",
+      "unit": "minutes/day with events",
+      "min": 0,
+      "max": 1440,
+      "step": 1,
+      "default": 320.41964285714283
+    },
+    {
+      "id": "phone_locked_hours",
+      "label": "Phone locked on recorded days",
+      "unit": "hours/day with events",
+      "min": 0,
+      "max": 24,
+      "step": 0.1,
+      "default": 11.795048309178746
+    }
+  ],
+  "provenance": {
+    "source": "studentlife_real",
+    "dataset": "StudentLife (Dartmouth), Zenodo RDS conversion v1.0.0",
+    "source_url": "https://zenodo.org/records/3529253",
+    "original_study": "Wang et al., StudentLife, UbiComp 2014",
+    "license_as_listed_by_archive_api": "CC-BY-4.0",
+    "target": "Post-study revised UCLA 20-item total; 10 positive items reversed including Q4.",
+    "target_bounds": [
+      20,
+      80
+    ],
+    "feature_window": [
+      "2013-03-27T00:00:00-04:00",
+      "2013-04-24T00:00:00-04:00"
+    ],
+    "post_surveys": 37,
+    "incomplete_post_surveys_dropped": 0,
+    "included_students": 34,
+    "coverage_exclusions": 3,
+    "unmapped_or_censored_sleep_responses_excluded": 9,
+    "features": [
+      {
+        "id": "reported_sleep_hours",
+        "label": "Reported sleep duration",
+        "unit": "hours/night",
+        "min": 0,
+        "max": 12,
+        "step": 0.1
+      },
+      {
+        "id": "sleep_duration_sd",
+        "label": "Sleep duration variability",
+        "unit": "hours (SD)",
+        "min": 0,
+        "max": 6,
+        "step": 0.1
+      },
+      {
+        "id": "conversation_event_minutes",
+        "label": "Detected conversation on recorded days",
+        "unit": "minutes/day with events",
+        "min": 0,
+        "max": 1440,
+        "step": 1
+      },
+      {
+        "id": "phone_locked_hours",
+        "label": "Phone locked on recorded days",
+        "unit": "hours/day with events",
+        "min": 0,
+        "max": 24,
+        "step": 0.1
+      }
+    ],
+    "limitations": [
+      "Small single-campus observational cohort; no clinical validation.",
+      "Survey table provides pre/post type, not individual completion timestamps. Early four-week window precedes intended end-term survey; exact individual ordering cannot be audited.",
+      "Sleep is self-reported EMA, not passive sensing. Left-censored <3-hour responses and invalid codes excluded; this can bias sleep summaries.",
+      "Conversation and phone-lock means use days with recorded events only. Missing event-days are not assumed to be zero and complete sensor coverage is unknown.",
+      "Detected conversation is not total social time. Locked duration is not screen time.",
+      "Only participants with >=7 observed days per channel are included; coverage filtering may introduce selection bias.",
+      "Features are four-week averages; single-day user inputs are out of task.",
+      "Different target scale from GLOBEM: no pooling or cross-dataset accuracy claim."
+    ]
+  },
+  "beats_baseline_on_holdout": false
+}

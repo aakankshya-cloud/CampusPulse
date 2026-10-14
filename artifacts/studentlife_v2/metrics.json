@@ -1,0 +1,409 @@
+{
+  "source": "studentlife_nested_cv",
+  "evaluation_kind": "nested_cv_development_only",
+  "warning": "Development-only research model. No new independent holdout evaluation or clinical validation.",
+  "target_description": "Post-study revised UCLA 20-item total; 10 positive items reversed including Q4.",
+  "selected_model": "Ridge \u00b7 original 4",
+  "features": [
+    "reported_sleep_hours",
+    "sleep_duration_sd",
+    "conversation_event_minutes",
+    "phone_locked_hours"
+  ],
+  "feature_schema": [
+    {
+      "id": "reported_sleep_hours",
+      "label": "Reported sleep duration",
+      "unit": "hours/night",
+      "min": 0,
+      "max": 12,
+      "step": 0.1,
+      "default": 6.15
+    },
+    {
+      "id": "sleep_duration_sd",
+      "label": "Sleep duration variability",
+      "unit": "hours (SD)",
+      "min": 0,
+      "max": 6,
+      "step": 0.1,
+      "default": 0.6214127824190987
+    },
+    {
+      "id": "conversation_event_minutes",
+      "label": "Detected conversation on recorded days",
+      "unit": "minutes/day with events",
+      "min": 0,
+      "max": 1440,
+      "step": 1,
+      "default": 320.41964285714283
+    },
+    {
+      "id": "phone_locked_hours",
+      "label": "Phone locked on recorded days",
+      "unit": "hours/day with events",
+      "min": 0,
+      "max": 24,
+      "step": 0.1,
+      "default": 11.795048309178746
+    }
+  ],
+  "scale": [
+    20,
+    80
+  ],
+  "comparison": [
+    {
+      "model": "Mean baseline",
+      "cv_mae": 9.909379509379509,
+      "cv_std": 3.3291161694325484,
+      "pooled_oof_mae": 9.855539522206188,
+      "features": 4,
+      "fold_mae": [
+        10.817460317460316,
+        7.547619047619048,
+        5.136363636363636,
+        11.172727272727272,
+        14.872727272727275
+      ]
+    },
+    {
+      "model": "Ridge \u00b7 original 4",
+      "cv_mae": 9.858995520780557,
+      "cv_std": 2.7258173557209853,
+      "pooled_oof_mae": 9.844709711702379,
+      "features": 4,
+      "fold_mae": [
+        10.763511139600007,
+        8.568763056850308,
+        6.027782811277319,
+        9.611816574141502,
+        14.32310402203365
+      ]
+    },
+    {
+      "model": "Forest \u00b7 original 4",
+      "cv_mae": 9.949331846240176,
+      "cv_std": 3.2290177878060673,
+      "pooled_oof_mae": 9.899965730428688,
+      "features": 4,
+      "fold_mae": [
+        10.795455347122013,
+        7.770323218448212,
+        5.301638629888619,
+        11.044355218855218,
+        14.834886816886817
+      ]
+    },
+    {
+      "model": "Ridge \u00b7 expanded 11",
+      "cv_mae": 11.833998522808074,
+      "cv_std": 2.8022724134155257,
+      "pooled_oof_mae": 11.80706279650302,
+      "features": 11,
+      "fold_mae": [
+        14.185590762852817,
+        8.755141672526909,
+        9.294877533066558,
+        10.969939334854201,
+        15.964443310739881
+      ]
+    },
+    {
+      "model": "Forest \u00b7 expanded 11",
+      "cv_mae": 9.993079894796555,
+      "cv_std": 3.248796756651856,
+      "pooled_oof_mae": 9.942416977741047,
+      "features": 11,
+      "fold_mae": [
+        10.846605038480035,
+        7.771655990614318,
+        5.34086713286712,
+        11.086600038850039,
+        14.91967127317127
+      ]
+    }
+  ],
+  "train_students": 27,
+  "test_students": 0,
+  "reserved_students": 7,
+  "student_overlap": 0,
+  "validation": {
+    "mae": 10.247538038130484,
+    "rmse": 12.302380495319214,
+    "r2": -0.13684524281647148,
+    "baseline_mae": 9.855539522206188
+  },
+  "nested_folds": [
+    {
+      "fold": 1,
+      "selected_by_inner_cv": "Mean baseline",
+      "mae": 10.817460317460316,
+      "train_students": 21,
+      "validation_students": 6,
+      "participant_overlap": 0
+    },
+    {
+      "fold": 2,
+      "selected_by_inner_cv": "Ridge \u00b7 original 4",
+      "mae": 8.568763056850308,
+      "train_students": 21,
+      "validation_students": 6,
+      "participant_overlap": 0
+    },
+    {
+      "fold": 3,
+      "selected_by_inner_cv": "Ridge \u00b7 original 4",
+      "mae": 6.027782811277319,
+      "train_students": 22,
+      "validation_students": 5,
+      "participant_overlap": 0
+    },
+    {
+      "fold": 4,
+      "selected_by_inner_cv": "Mean baseline",
+      "mae": 11.172727272727272,
+      "train_students": 22,
+      "validation_students": 5,
+      "participant_overlap": 0
+    },
+    {
+      "fold": 5,
+      "selected_by_inner_cv": "Mean baseline",
+      "mae": 14.872727272727275,
+      "train_students": 22,
+      "validation_students": 5,
+      "participant_overlap": 0
+    }
+  ],
+  "selection": "Lowest mean 5-fold development CV MAE; nested CV separately estimates the selection procedure.",
+  "evaluation": "5 outer participant folds; 4 inner folds for selection. All preprocessing fitted inside folds.",
+  "importance": [
+    {
+      "feature": "reported_sleep_hours",
+      "label": "Reported sleep duration",
+      "mae_increase": 0.007510399979157123,
+      "std": 0.2740454741359913
+    },
+    {
+      "feature": "sleep_duration_sd",
+      "label": "Sleep duration variability",
+      "mae_increase": -0.07612939349258663,
+      "std": 1.195187314653525
+    },
+    {
+      "feature": "conversation_event_minutes",
+      "label": "Detected conversation on recorded days",
+      "mae_increase": 0.4429708839021595,
+      "std": 1.324640720311702
+    },
+    {
+      "feature": "phone_locked_hours",
+      "label": "Phone locked on recorded days",
+      "mae_increase": 0.07913152489617362,
+      "std": 0.662835054421708
+    }
+  ],
+  "importance_method": "Out-of-fold permutation importance for the development-selected configuration; exploratory, not an independent attribution audit.",
+  "dataset_sha256": "4ffdfab8bdb629013d4f68c57f242de71796494e8801ff171ca5c91dacc33439",
+  "original_dataset_sha256": "2901645133f1ce13a2a312b3c889f06a25023356b77ad5ea2a7e54eee0ff22c0",
+  "beats_baseline_in_nested_cv": false,
+  "provenance": {
+    "source": "studentlife_development_candidates",
+    "dataset": "StudentLife (Dartmouth), Zenodo RDS conversion v1.0.0",
+    "source_url": "https://zenodo.org/records/3529253",
+    "original_study": "Wang et al., StudentLife, UbiComp 2014",
+    "license_as_listed_by_archive_api": "CC-BY-4.0",
+    "target": "Post-study revised UCLA 20-item total; 10 positive items reversed including Q4.",
+    "target_bounds": [
+      20,
+      80
+    ],
+    "feature_window": [
+      "2013-03-27T00:00:00-04:00",
+      "2013-04-24T00:00:00-04:00"
+    ],
+    "post_surveys": 37,
+    "incomplete_post_surveys_dropped": 0,
+    "included_students": 27,
+    "coverage_exclusions": 3,
+    "unmapped_or_censored_sleep_responses_excluded": 9,
+    "features": [
+      {
+        "id": "reported_sleep_hours",
+        "label": "Reported sleep duration",
+        "unit": "hours/night",
+        "min": 0,
+        "max": 12,
+        "step": 0.1
+      },
+      {
+        "id": "sleep_duration_sd",
+        "label": "Sleep duration variability",
+        "unit": "hours (SD)",
+        "min": 0,
+        "max": 6,
+        "step": 0.1
+      },
+      {
+        "id": "conversation_event_minutes",
+        "label": "Detected conversation on recorded days",
+        "unit": "minutes/day with events",
+        "min": 0,
+        "max": 1440,
+        "step": 1
+      },
+      {
+        "id": "phone_locked_hours",
+        "label": "Phone locked on recorded days",
+        "unit": "hours/day with events",
+        "min": 0,
+        "max": 24,
+        "step": 0.1
+      },
+      {
+        "id": "exercise_day_share",
+        "label": "Reported exercise frequency",
+        "unit": "fraction of reported days",
+        "min": 0,
+        "max": 1,
+        "step": 0.01,
+        "description": "Share of observed exercise-report days with a Yes response to vigorous exercise. Self-report, not sensor-derived exercise minutes."
+      },
+      {
+        "id": "sleep_change_hours",
+        "label": "Change in reported sleep",
+        "unit": "hours: second half minus first half",
+        "min": -12,
+        "max": 12,
+        "step": 0.1,
+        "description": "Mean sleep in days 15\u201328 minus days 1\u201314; at least three observed days in each half. Negative means less sleep later."
+      },
+      {
+        "id": "conversation_sd_minutes",
+        "label": "Day-to-day conversation variation",
+        "unit": "minutes (SD)",
+        "min": 0,
+        "max": 1440,
+        "step": 1,
+        "description": "Sample SD of detected conversation minutes across event-days. Not a measure of total social interaction."
+      },
+      {
+        "id": "conversation_change_minutes",
+        "label": "Change in detected conversation",
+        "unit": "minutes: second half minus first half",
+        "min": -1440,
+        "max": 1440,
+        "step": 1,
+        "description": "Second-half minus first-half mean, with three recorded event-days per half. Negative means less detected conversation later; missing event-days are not zeros."
+      },
+      {
+        "id": "phone_lock_sd_hours",
+        "label": "Day-to-day phone-lock variation",
+        "unit": "hours (SD)",
+        "min": 0,
+        "max": 24,
+        "step": 0.1,
+        "description": "Sample SD of phone-locked duration across recorded event-days. Not variation in screen-use duration."
+      },
+      {
+        "id": "phone_lock_change_hours",
+        "label": "Change in phone-locked duration",
+        "unit": "hours: second half minus first half",
+        "min": -24,
+        "max": 24,
+        "step": 0.1,
+        "description": "Second-half minus first-half mean of recorded phone-locked hours, requiring three event-days in each half."
+      },
+      {
+        "id": "night_phone_locked_hours",
+        "label": "Nighttime phone-locked duration",
+        "unit": "hours/night with lock events",
+        "min": 0,
+        "max": 6,
+        "step": 0.1,
+        "description": "Mean recorded locked time between midnight and 06:00, requiring three nights with recorded lock events. This is not nighttime phone-use duration."
+      }
+    ],
+    "limitations": [
+      "Small single-campus observational cohort; no clinical validation.",
+      "Survey table provides pre/post type, not individual completion timestamps. Early four-week window precedes intended end-term survey; exact individual ordering cannot be audited.",
+      "Sleep is self-reported EMA, not passive sensing. Left-censored <3-hour responses and invalid codes excluded; this can bias sleep summaries.",
+      "Conversation and phone-lock means use days with recorded events only. Missing event-days are not assumed to be zero and complete sensor coverage is unknown.",
+      "Detected conversation is not total social time. Locked duration is not screen time.",
+      "Only participants with >=7 observed days per channel are included; coverage filtering may introduce selection bias.",
+      "Features are four-week averages; single-day user inputs are out of task.",
+      "Different target scale from GLOBEM: no pooling or cross-dataset accuracy claim.",
+      "Exercise is an active self-report, not passive activity sensing.",
+      "Locked duration is not phone-use duration. Nighttime use remains unmeasured.",
+      "Conversation change is a change in detected events, not a confirmed drop in social interaction.",
+      "Event-day means and changes depend on recording coverage.",
+      "Seven reserved participants were excluded before raw feature processing.",
+      "No feature selection by outcome correlation, no model retraining, and no new holdout evaluation performed."
+    ],
+    "development_only": true,
+    "base_eligible_students": 34,
+    "reserved_students": 7
+  },
+  "limitations": [
+    "Small single-campus observational cohort; no clinical validation.",
+    "Survey table provides pre/post type, not individual completion timestamps. Early four-week window precedes intended end-term survey; exact individual ordering cannot be audited.",
+    "Sleep is self-reported EMA, not passive sensing. Left-censored <3-hour responses and invalid codes excluded; this can bias sleep summaries.",
+    "Conversation and phone-lock means use days with recorded events only. Missing event-days are not assumed to be zero and complete sensor coverage is unknown.",
+    "Detected conversation is not total social time. Locked duration is not screen time.",
+    "Only participants with >=7 observed days per channel are included; coverage filtering may introduce selection bias.",
+    "Features are four-week averages; single-day user inputs are out of task.",
+    "Different target scale from GLOBEM: no pooling or cross-dataset accuracy claim.",
+    "Exercise is an active self-report, not passive activity sensing.",
+    "Locked duration is not phone-use duration. Nighttime use remains unmeasured.",
+    "Conversation change is a change in detected events, not a confirmed drop in social interaction.",
+    "Event-day means and changes depend on recording coverage.",
+    "Seven reserved participants were excluded before raw feature processing.",
+    "No feature selection by outcome correlation, no model retraining, and no new holdout evaluation performed.",
+    "Nested CV uses only 27 development students; the original seven held-out people were not accessed.",
+    "Development-only CV cannot replace external validation. Prior exploratory inspection makes these results provisional.",
+    "Fixed-candidate CV results support selection, not a separate confirmation of the selected winner.",
+    "Nested CV estimates the selection procedure, not an independent error measurement for the final fitted model.",
+    "Feature expansion is compared at the same fixed estimator settings; no hyperparameter sweep or outcome threshold is introduced."
+  ],
+  "shap": {
+    "method": "SHAP LinearExplainer with Independent masker",
+    "scope": "Descriptive explanations of the development-fitted Ridge model, not new validation.",
+    "reference": "Mean of transformed development features; equivalent to full development background for interventional linear SHAP.",
+    "background_students": 27,
+    "reserved_students_used": 0,
+    "base_value": 40.407407407407405,
+    "max_additivity_error": 0.0,
+    "model_signature": "941297d0e4d1d9c8aad9b6c49adb7d57d4d268f93c4d82533f077d15d5697bc6",
+    "shap_version": "0.51.0",
+    "features": [
+      {
+        "feature": "reported_sleep_hours",
+        "label": "Reported sleep duration",
+        "mean_absolute_shap": 0.19803366994267024
+      },
+      {
+        "feature": "sleep_duration_sd",
+        "label": "Sleep duration variability",
+        "mean_absolute_shap": 1.1163640976557814
+      },
+      {
+        "feature": "conversation_event_minutes",
+        "label": "Detected conversation on recorded days",
+        "mean_absolute_shap": 2.0455655807451523
+      },
+      {
+        "feature": "phone_locked_hours",
+        "label": "Phone locked on recorded days",
+        "mean_absolute_shap": 1.503188758833039
+      }
+    ],
+    "limitations": [
+      "SHAP explains this fitted model; it does not improve its predictive validity.",
+      "Interventional attribution breaks feature dependence; correlated inputs can receive different credit under other SHAP assumptions.",
+      "These are score-point contributions, not probabilities, diagnoses or causal effects.",
+      "Global summaries describe training/development behavior and are not independent performance evidence.",
+      "Only aggregate background means are retained in the model artifact; no background participant rows are stored."
+    ]
+  }
+}

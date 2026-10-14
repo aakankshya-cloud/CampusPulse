@@ -1,0 +1,16 @@
+test_frontend_has_no_persistent_scenario_storage_or_default_consent (test_privacy.PrivacyTests.test_frontend_has_no_persistent_scenario_storage_or_default_consent) ... ok
+test_handlers_do_not_open_files_for_writing_or_log_inputs (test_privacy.PrivacyTests.test_handlers_do_not_open_files_for_writing_or_log_inputs) ... ok
+test_llm_payload_omits_identifiers_values_and_scores (test_privacy.PrivacyTests.test_llm_payload_omits_identifiers_values_and_scores) ... ok
+test_local_llm_bypasses_environment_proxies (test_privacy.PrivacyTests.test_local_llm_bypasses_environment_proxies) ... ok
+test_local_llm_redirect_is_rejected (test_privacy.PrivacyTests.test_local_llm_redirect_is_rejected) ... ok
+test_no_store_and_browser_connection_policy_and_host_check (test_privacy.PrivacyTests.test_no_store_and_browser_connection_policy_and_host_check) ... ok
+test_offline_retrieval_requires_no_network_connection (test_privacy.PrivacyTests.test_offline_retrieval_requires_no_network_connection) ... ok
+test_opt_out_never_calls_llm (test_privacy.PrivacyTests.test_opt_out_never_calls_llm) ... ok
+test_prediction_requires_no_network_connection (test_privacy.PrivacyTests.test_prediction_requires_no_network_connection) ... ok
+test_remote_llm_target_is_rejected (test_privacy.PrivacyTests.test_remote_llm_target_is_rejected) ... ok
+test_shap_explanation_requires_no_network_connection (test_privacy.PrivacyTests.test_shap_explanation_requires_no_network_connection) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.217s
+
+OK

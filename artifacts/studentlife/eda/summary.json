@@ -1,0 +1,102 @@
+{
+  "source": "studentlife_real",
+  "scope": "Development participants only; holdout outcomes and features excluded.",
+  "development_students": 27,
+  "reserved_students": 7,
+  "target_bounds": [
+    20,
+    80
+  ],
+  "features": [
+    {
+      "feature": "reported_sleep_hours",
+      "label": "Reported sleep duration",
+      "unit": "hours/night",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 6.15,
+      "min": 5.277777777777778,
+      "max": 6.75,
+      "q25": 5.736231884057971,
+      "q75": 6.318609022556391,
+      "pearson_r": -0.015453552474540158,
+      "spearman_r": 0.0
+    },
+    {
+      "feature": "sleep_duration_sd",
+      "label": "Sleep duration variability",
+      "unit": "hours (SD)",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 0.6214127824190987,
+      "min": 0.3265986323710904,
+      "max": 1.4547693133073407,
+      "q25": 0.5233879991444965,
+      "q75": 0.7218337911080646,
+      "pearson_r": 0.12495764583480191,
+      "spearman_r": 0.10429749927850399
+    },
+    {
+      "feature": "conversation_event_minutes",
+      "label": "Detected conversation on recorded days",
+      "unit": "minutes/day with events",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 320.41964285714283,
+      "min": 107.2036231884058,
+      "max": 516.8488095238096,
+      "q25": 274.6790890269151,
+      "q75": 404.77686335403735,
+      "pearson_r": -0.2740169259385935,
+      "spearman_r": -0.25202680177562253
+    },
+    {
+      "feature": "phone_locked_hours",
+      "label": "Phone locked on recorded days",
+      "unit": "hours/day with events",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 11.795048309178746,
+      "min": 5.632361111111111,
+      "max": 16.14191468253968,
+      "q25": 9.683538510101009,
+      "q75": 13.55514462646407,
+      "pearson_r": 0.12477094466465023,
+      "spearman_r": 0.07982887774689014
+    }
+  ],
+  "coverage": [
+    {
+      "channel": "Sleep report days",
+      "median_days": 19.0,
+      "min_days": 7,
+      "max_days": 28
+    },
+    {
+      "channel": "Conversation event-days",
+      "median_days": 28.0,
+      "min_days": 22,
+      "max_days": 28
+    },
+    {
+      "channel": "Phone-lock event-days",
+      "median_days": 27.0,
+      "min_days": 19,
+      "max_days": 28
+    }
+  ],
+  "flow": {
+    "complete_post_surveys": 37,
+    "eligible_students": 34,
+    "coverage_exclusions": 3
+  },
+  "input_sha256": "2901645133f1ce13a2a312b3c889f06a25023356b77ad5ea2a7e54eee0ff22c0",
+  "limitations": [
+    "These correlations are exploratory associations, not causes or feature-selection rules.",
+    "Only 27 development students in the supplied StudentLife experiment; patterns are unstable.",
+    "Zero missing prepared values does not imply complete raw sensor data.",
+    "Event-day counts do not distinguish no activity from failed recording.",
+    "Activity and actual screen use are not measured in this adapter; no plots are fabricated.",
+    "The prior seven-person holdout remains reserved; this analysis does not evaluate a new model."
+  ]
+}

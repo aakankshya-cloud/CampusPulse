@@ -1,0 +1,70 @@
+{
+  "generated_at_utc": "2026-10-14T19:56:14.036395+00:00",
+  "code_fingerprint": "1d675bdfb0c7fbecee0503564f699cba73b0d0a275513637082e8127c8dca25e",
+  "scope": "Automated checks of the supplied application code and tested paths. Not a device-wide audit.",
+  "passed": true,
+  "tests_run": 11,
+  "checks": [
+    {
+      "check": "test_frontend_has_no_persistent_scenario_storage_or_default_consent",
+      "status": "passed",
+      "label": "Keep default consent off and avoid persistent browser storage"
+    },
+    {
+      "check": "test_handlers_do_not_open_files_for_writing_or_log_inputs",
+      "status": "passed",
+      "label": "Handle tested scenarios without Python file writes or request logs"
+    },
+    {
+      "check": "test_llm_payload_omits_identifiers_values_and_scores",
+      "status": "passed",
+      "label": "Exclude identifiers, exact values and scores from the AI payload"
+    },
+    {
+      "check": "test_local_llm_bypasses_environment_proxies",
+      "status": "passed",
+      "label": "Bypass configured proxies for the local AI request"
+    },
+    {
+      "check": "test_local_llm_redirect_is_rejected",
+      "status": "passed",
+      "label": "Reject redirects from the local AI request"
+    },
+    {
+      "check": "test_no_store_and_browser_connection_policy_and_host_check",
+      "status": "passed",
+      "label": "Use no-store responses and reject unexpected hostnames"
+    },
+    {
+      "check": "test_offline_retrieval_requires_no_network_connection",
+      "status": "passed",
+      "label": "Retrieve authored suggestions without a network connection"
+    },
+    {
+      "check": "test_opt_out_never_calls_llm",
+      "status": "passed",
+      "label": "Require opt-in before contacting the AI service"
+    },
+    {
+      "check": "test_prediction_requires_no_network_connection",
+      "status": "passed",
+      "label": "Calculate predictions without a network connection"
+    },
+    {
+      "check": "test_remote_llm_target_is_rejected",
+      "status": "passed",
+      "label": "Reject external AI addresses"
+    },
+    {
+      "check": "test_shap_explanation_requires_no_network_connection",
+      "status": "passed",
+      "label": "Calculate prepared SHAP explanations without a network connection"
+    }
+  ],
+  "limits": [
+    "File-write checks observe Python file-open APIs in tested prediction/support handlers, not all operating-system writes.",
+    "LLM transport tests use mocks; a live Ollama service and its downstream network/logging are not audited.",
+    "Static frontend checks and response headers are tested; browser extension behavior, caches outside app control and memory erasure are not certified.",
+    "This report applies to the fingerprinted build; run again after code changes."
+  ]
+}

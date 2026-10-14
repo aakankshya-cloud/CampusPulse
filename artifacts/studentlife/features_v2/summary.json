@@ -1,0 +1,103 @@
+{
+  "source": "studentlife_real",
+  "stage": "Candidate feature definitions; the model comparison identifies which features are used.",
+  "original_dataset_sha256": "2901645133f1ce13a2a312b3c889f06a25023356b77ad5ea2a7e54eee0ff22c0",
+  "development_students": 27,
+  "reserved_students": 7,
+  "original_feature_count": 4,
+  "candidate_feature_count": 11,
+  "features": [
+    {
+      "id": "exercise_day_share",
+      "label": "Reported exercise frequency",
+      "unit": "fraction of reported days",
+      "min": 0,
+      "max": 1,
+      "step": 0.01,
+      "description": "Share of observed exercise-report days with a Yes response to vigorous exercise. Self-report, not sensor-derived exercise minutes.",
+      "observed_students": 25,
+      "missing_students": 2,
+      "median": 0.2
+    },
+    {
+      "id": "sleep_change_hours",
+      "label": "Change in reported sleep",
+      "unit": "hours: second half minus first half",
+      "min": -12,
+      "max": 12,
+      "step": 0.1,
+      "description": "Mean sleep in days 15\u201328 minus days 1\u201314; at least three observed days in each half. Negative means less sleep later.",
+      "observed_students": 25,
+      "missing_students": 2,
+      "median": -0.05769230769230749
+    },
+    {
+      "id": "conversation_sd_minutes",
+      "label": "Day-to-day conversation variation",
+      "unit": "minutes (SD)",
+      "min": 0,
+      "max": 1440,
+      "step": 1,
+      "description": "Sample SD of detected conversation minutes across event-days. Not a measure of total social interaction.",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 141.79145017825977
+    },
+    {
+      "id": "conversation_change_minutes",
+      "label": "Change in detected conversation",
+      "unit": "minutes: second half minus first half",
+      "min": -1440,
+      "max": 1440,
+      "step": 1,
+      "description": "Second-half minus first-half mean, with three recorded event-days per half. Negative means less detected conversation later; missing event-days are not zeros.",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": -26.729761904761858
+    },
+    {
+      "id": "phone_lock_sd_hours",
+      "label": "Day-to-day phone-lock variation",
+      "unit": "hours (SD)",
+      "min": 0,
+      "max": 24,
+      "step": 0.1,
+      "description": "Sample SD of phone-locked duration across recorded event-days. Not variation in screen-use duration.",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 5.1136051518735
+    },
+    {
+      "id": "phone_lock_change_hours",
+      "label": "Change in phone-locked duration",
+      "unit": "hours: second half minus first half",
+      "min": -24,
+      "max": 24,
+      "step": 0.1,
+      "description": "Second-half minus first-half mean of recorded phone-locked hours, requiring three event-days in each half.",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": -0.7500793650793653
+    },
+    {
+      "id": "night_phone_locked_hours",
+      "label": "Nighttime phone-locked duration",
+      "unit": "hours/night with lock events",
+      "min": 0,
+      "max": 6,
+      "step": 0.1,
+      "description": "Mean recorded locked time between midnight and 06:00, requiring three nights with recorded lock events. This is not nighttime phone-use duration.",
+      "observed_students": 27,
+      "missing_students": 0,
+      "median": 4.60662037037037
+    }
+  ],
+  "limitations": [
+    "Exercise is an active self-report, not passive activity sensing.",
+    "Locked duration is not phone-use duration. Nighttime use remains unmeasured.",
+    "Conversation change is a change in detected events, not a confirmed drop in social interaction.",
+    "Event-day means and changes depend on recording coverage.",
+    "Seven reserved participants were excluded before raw feature processing.",
+    "No feature selection by outcome correlation, no model retraining, and no new holdout evaluation performed."
+  ]
+}

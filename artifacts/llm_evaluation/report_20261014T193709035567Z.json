@@ -1,0 +1,262 @@
+{
+  "generated_at_utc": "2026-10-14T19:37:09.034651+00:00",
+  "evaluation_kind": "live_fixed_topic_smoke_test",
+  "source": "studentlife_nested_cv",
+  "app_code_sha256": {
+    "campuspulse/coach.py": "bf054dc36d5b73481abdbbc7b0439e245c2b231b9520d607b941916f50311d88",
+    "campuspulse/privacy.py": "fd8c11cdb315226d8adc4058593a5da77bff1e541f7b093514abb590261df20b",
+    "server.py": "35880c17f871cad8126b4fdda44760e0a2a26be9e87872aa51aad6cb43b58103"
+  },
+  "total_requests": 12,
+  "mode_counts": {
+    "local_llm": 6,
+    "retrieval_fallback": 6
+  },
+  "local_llm_rate": 0.5,
+  "local_llm_median_seconds": 2.6165000000000003,
+  "retrieval_match_count": 12,
+  "consent_opt_out": {
+    "observed_mode": "disabled",
+    "passed": true,
+    "scope": "HTTP response only; no transport-call observation in this live run."
+  },
+  "cases": [
+    {
+      "focus": "connection",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+      "source_ids": [
+        "connection"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 3.029
+    },
+    {
+      "focus": "routine",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If you would like, consider establishing a comfortable bedtime routine to enhance restful sleep.",
+      "source_ids": [
+        "routine"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": false,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.535
+    },
+    {
+      "focus": "movement",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If you would like to engage in a comfortable and accessible movement, consider a short walk or another gentle activity you enjoy.",
+      "source_ids": [
+        "movement"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 22,
+      "exactly_matches_authored_card": false,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.77
+    },
+    {
+      "focus": "balance",
+      "attempt": 1,
+      "mode": "retrieval_fallback",
+      "response": "If you want, pause one screen-based task for a few minutes and choose a restful break.",
+      "source_ids": [
+        "balance"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 16,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 3.075
+    },
+    {
+      "focus": "connection",
+      "attempt": 2,
+      "mode": "local_llm",
+      "response": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+      "source_ids": [
+        "connection"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.673
+    },
+    {
+      "focus": "routine",
+      "attempt": 2,
+      "mode": "retrieval_fallback",
+      "response": "If it suits you, try a consistent wind-down time and notice how your routine feels this week.",
+      "source_ids": [
+        "routine"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.45
+    },
+    {
+      "focus": "movement",
+      "attempt": 2,
+      "mode": "retrieval_fallback",
+      "response": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy.",
+      "source_ids": [
+        "movement"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.437
+    },
+    {
+      "focus": "balance",
+      "attempt": 2,
+      "mode": "retrieval_fallback",
+      "response": "If you want, pause one screen-based task for a few minutes and choose a restful break.",
+      "source_ids": [
+        "balance"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 16,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.6
+    },
+    {
+      "focus": "connection",
+      "attempt": 3,
+      "mode": "local_llm",
+      "response": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+      "source_ids": [
+        "connection"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.56
+    },
+    {
+      "focus": "routine",
+      "attempt": 3,
+      "mode": "local_llm",
+      "response": "If you would like, consider establishing a comfortable bedtime routine to enhance restful sleep.",
+      "source_ids": [
+        "routine"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": false,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.391
+    },
+    {
+      "focus": "movement",
+      "attempt": 3,
+      "mode": "retrieval_fallback",
+      "response": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy.",
+      "source_ids": [
+        "movement"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.426
+    },
+    {
+      "focus": "balance",
+      "attempt": 3,
+      "mode": "retrieval_fallback",
+      "response": "If you want, pause one screen-based task for a few minutes and choose a restful break.",
+      "source_ids": [
+        "balance"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 16,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": null,
+        "grounded_in_card": null,
+        "no_unsupported_health_claims": null,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.628
+    }
+  ],
+  "limitations": [
+    "Four fixed topic choices repeated with example median inputs; not independent varied scenarios.",
+    "Mode measures accepted generation, not quality, safety or clinical benefit.",
+    "Matching source ID tests retrieval; human review is required for generated-text relevance and grounding.",
+    "Latency includes HTTP, model loading and generation; first calls can be slower.",
+    "The same prompt/model is used throughout. This does not demonstrate prompt optimization.",
+    "Model identity and weights are not independently verified by this script.",
+    "Reports intentionally save these fictional test replies; interactive user scenarios remain separate."
+  ]
+}

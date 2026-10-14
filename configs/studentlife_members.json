@@ -1,0 +1,30 @@
+{
+  "dataset_rds/EMA/Sleep.Rds": {
+    "offset": 123232,
+    "compressed_size": 23955,
+    "size": 24056,
+    "crc32": 2248462785,
+    "method": 8
+  },
+  "dataset_rds/sensing/conversation.Rds": {
+    "offset": 172077408,
+    "compressed_size": 584000,
+    "size": 587078,
+    "crc32": 1354149579,
+    "method": 8
+  },
+  "dataset_rds/sensing/phonelock.Rds": {
+    "offset": 175710493,
+    "compressed_size": 72565,
+    "size": 72981,
+    "crc32": 3880769455,
+    "method": 8
+  },
+  "dataset_rds/survey/LonelinessScale.Rds": {
+    "offset": 230452560,
+    "compressed_size": 1883,
+    "size": 1883,
+    "crc32": 772056397,
+    "method": 0
+  }
+}

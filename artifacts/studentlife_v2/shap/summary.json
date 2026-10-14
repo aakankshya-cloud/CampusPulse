@@ -1,0 +1,40 @@
+{
+  "method": "SHAP LinearExplainer with Independent masker",
+  "scope": "Descriptive explanations of the development-fitted Ridge model, not new validation.",
+  "reference": "Mean of transformed development features; equivalent to full development background for interventional linear SHAP.",
+  "background_students": 27,
+  "reserved_students_used": 0,
+  "base_value": 40.407407407407405,
+  "max_additivity_error": 0.0,
+  "model_signature": "941297d0e4d1d9c8aad9b6c49adb7d57d4d268f93c4d82533f077d15d5697bc6",
+  "shap_version": "0.51.0",
+  "features": [
+    {
+      "feature": "reported_sleep_hours",
+      "label": "Reported sleep duration",
+      "mean_absolute_shap": 0.19803366994267024
+    },
+    {
+      "feature": "sleep_duration_sd",
+      "label": "Sleep duration variability",
+      "mean_absolute_shap": 1.1163640976557814
+    },
+    {
+      "feature": "conversation_event_minutes",
+      "label": "Detected conversation on recorded days",
+      "mean_absolute_shap": 2.0455655807451523
+    },
+    {
+      "feature": "phone_locked_hours",
+      "label": "Phone locked on recorded days",
+      "mean_absolute_shap": 1.503188758833039
+    }
+  ],
+  "limitations": [
+    "SHAP explains this fitted model; it does not improve its predictive validity.",
+    "Interventional attribution breaks feature dependence; correlated inputs can receive different credit under other SHAP assumptions.",
+    "These are score-point contributions, not probabilities, diagnoses or causal effects.",
+    "Global summaries describe training/development behavior and are not independent performance evidence.",
+    "Only aggregate background means are retained in the model artifact; no background participant rows are stored."
+  ]
+}

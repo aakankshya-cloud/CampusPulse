@@ -1,0 +1,31 @@
+CAMPUSPULSE - YOUR MAIN PROJECT FOLDER (STEPS 1-6)
+
+1. Extract the ZIP. Open the inner campuspulse folder in VS Code.
+2. Open Terminal > New Terminal. Run:
+   .\setup_windows.cmd
+3. When setup succeeds, run:
+   .\start_windows.cmd
+4. Open http://127.0.0.1:8000 in your browser.
+5. Stop the server with Ctrl+C. Next time only run start_windows.cmd.
+
+Included: all Steps 1-6 code, trained StudentLife models, SHAP reference,
+charts, aggregate evaluation results, tests, dependency lists and guides.
+The app works without downloading the raw dataset or retraining.
+Setup downloads Python packages and creates a fresh environment for this folder.
+Python 3.13 must already be installed. Windows scripts have not been run here.
+
+OPTIONAL - KEEP YOUR OLD DOWNLOADED DATA HERE:
+After setup, run:
+   .\.venv\Scripts\python.exe import_old_data.py
+Paste the full OLD campuspulse folder path when prompted.
+This copies its data folder without deleting the old folder or replacing
+existing files. The old environment is not portable; setup creates a new one.
+Raw participant data from your computer is not contained in this ZIP.
+
+If you have no old dataset and want to reproduce training, follow
+REAL_DATA_GUIDE.md / README.md for prepare_studentlife.py and later steps.
+No raw data is needed just to use the included app and model.
+
+Optional AI text generation: Ollama and a local model are separate downloads.
+Without them, the app uses authored offline suggestions and labels them clearly.
+GLOBEM requires authorized access; no real GLOBEM dataset/model is included.
