@@ -1,0 +1,122 @@
+[
+  {
+    "query": "I miss my friends and want to send a message",
+    "expected_ids": [
+      "connection"
+    ]
+  },
+  {
+    "query": "My parents live far away; I want a video call",
+    "expected_ids": [
+      "connection_video"
+    ]
+  },
+  {
+    "query": "I eat lunch alone and could invite a classmate",
+    "expected_ids": [
+      "connection_meal"
+    ]
+  },
+  {
+    "query": "I want to listen when a friend needs company",
+    "expected_ids": [
+      "connection_listen"
+    ]
+  },
+  {
+    "query": "Where could I try community volunteering?",
+    "expected_ids": [
+      "connection_volunteer"
+    ]
+  },
+  {
+    "query": "My bedtime schedule changes every day",
+    "expected_ids": [
+      "routine"
+    ]
+  },
+  {
+    "query": "I keep scrolling my phone before bed",
+    "expected_ids": [
+      "routine_screen"
+    ]
+  },
+  {
+    "query": "I would like to read a book before sleep",
+    "expected_ids": [
+      "routine_read"
+    ]
+  },
+  {
+    "query": "I keep thinking about tomorrow’s tasks in bed",
+    "expected_ids": [
+      "routine_list"
+    ]
+  },
+  {
+    "query": "My dorm room is noisy and too bright for sleep",
+    "expected_ids": [
+      "routine_room"
+    ]
+  },
+  {
+    "query": "I want a short walk outdoors",
+    "expected_ids": [
+      "movement"
+    ]
+  },
+  {
+    "query": "I want to join a walking club with other people",
+    "expected_ids": [
+      "movement_group"
+    ]
+  },
+  {
+    "query": "I need a small manageable activity goal to start",
+    "expected_ids": [
+      "movement_goal"
+    ]
+  },
+  {
+    "query": "I would like to do a gardening task",
+    "expected_ids": [
+      "movement_garden"
+    ]
+  },
+  {
+    "query": "I need an enjoyable activity that fits my daily routine",
+    "expected_ids": [
+      "movement_choice"
+    ]
+  },
+  {
+    "query": "I need to pause my screen task for a break",
+    "expected_ids": [
+      "balance"
+    ]
+  },
+  {
+    "query": "I want to use a pomodoro timer while studying",
+    "expected_ids": [
+      "balance_timer"
+    ]
+  },
+  {
+    "query": "I keep switching between assignments and multitasking",
+    "expected_ids": [
+      "balance_single"
+    ]
+  },
+  {
+    "query": "Notifications keep interrupting my study session",
+    "expected_ids": [
+      "balance_notifications"
+    ]
+  },
+  {
+    "query": "I want a break between one assignment and the next",
+    "expected_ids": [
+      "balance_between"
+    ]
+  }
+]

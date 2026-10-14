@@ -11,6 +11,6 @@ test_remote_llm_target_is_rejected (test_privacy.PrivacyTests.test_remote_llm_ta
 test_shap_explanation_requires_no_network_connection (test_privacy.PrivacyTests.test_shap_explanation_requires_no_network_connection) ... ok
 
 ----------------------------------------------------------------------
-Ran 11 tests in 3.217s
+Ran 11 tests in 2.169s
 
 OK

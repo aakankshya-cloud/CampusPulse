@@ -1,0 +1,222 @@
+[
+  {
+    "id": "connection",
+    "topic": "connection",
+    "title": "A small connection",
+    "text": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+    "tags": "friends contact message connection community",
+    "source": "NHS — 5 steps to mental wellbeing",
+    "source_url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "connection_video",
+    "topic": "connection",
+    "title": "Stay in touch from a distance",
+    "text": "If you would like, arrange a video call with a friend or family member who lives far away.",
+    "tags": "video call family parents distance homesick",
+    "source": "NHS — 5 steps to mental wellbeing",
+    "source_url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "connection_meal",
+    "topic": "connection",
+    "title": "Share a meal",
+    "text": "If you would like, invite a classmate or colleague to share lunch with you.",
+    "tags": "lunch meal eat classmate colleague company",
+    "source": "NHS — 5 steps to mental wellbeing",
+    "source_url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "connection_listen",
+    "topic": "connection",
+    "title": "Make time to listen",
+    "text": "If you would like, ask someone you know how they are and make time to listen to their answer.",
+    "tags": "listen listening ask conversation support friend",
+    "source": "NHS — 5 steps to mental wellbeing",
+    "source_url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "connection_volunteer",
+    "topic": "connection",
+    "title": "Explore volunteering",
+    "text": "If you would like, look into a local community volunteering opportunity that fits your interests and time.",
+    "tags": "volunteer volunteering community helping opportunity",
+    "source": "NHS — 5 steps to mental wellbeing",
+    "source_url": "https://www.nhs.uk/mental-health/self-help/guides-tools-and-activities/five-steps-to-mental-wellbeing/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "routine",
+    "topic": "routine",
+    "title": "Make room for a routine",
+    "text": "If it suits you, try a consistent wind-down time and notice how your routine feels this week.",
+    "tags": "sleep bedtime regular consistent schedule wind down",
+    "source": "NHS — Sleep routines",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "routine_screen",
+    "topic": "routine",
+    "title": "Put the screen aside before bed",
+    "text": "If it suits you, set aside your phone before bed and choose a non-screen activity.",
+    "tags": "sleep phone tablet computer screen scrolling bedtime",
+    "source": "NHS — Sleep routines",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "routine_read",
+    "topic": "routine",
+    "title": "Choose something to read",
+    "text": "If it suits you, read something you enjoy as part of your bedtime routine.",
+    "tags": "sleep read reading book bedtime unwind",
+    "source": "NHS — Sleep routines",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "routine_list",
+    "topic": "routine",
+    "title": "Write tomorrow’s tasks down",
+    "text": "If it suits you, write a short list of tomorrow’s tasks before going to bed.",
+    "tags": "sleep tomorrow tasks list worries planning bed",
+    "source": "NHS — Sleep routines",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "routine_room",
+    "topic": "routine",
+    "title": "Check the bedroom environment",
+    "text": "If it suits you, adjust light or noise in your room to suit your preferences before bed.",
+    "tags": "sleep bedroom dorm room noisy noise light bright dark",
+    "source": "NHS — Sleep routines",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/how-to-fall-asleep-faster-and-sleep-better/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "movement",
+    "topic": "movement",
+    "title": "A brief change of scene",
+    "text": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy.",
+    "tags": "movement walk walking outdoors activity gentle",
+    "source": "NHS — Being active",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "movement_group",
+    "topic": "movement",
+    "title": "Find a group activity",
+    "text": "If comfortable and accessible, consider a local walking group or another group activity you enjoy.",
+    "tags": "movement walking club group activity friends",
+    "source": "NHS — Being active",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "movement_goal",
+    "topic": "movement",
+    "title": "Start with a manageable goal",
+    "text": "If comfortable and accessible, choose a small activity goal and move at your own pace.",
+    "tags": "movement small start goal manageable realistic pace",
+    "source": "NHS — Being active",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "movement_garden",
+    "topic": "movement",
+    "title": "Try a gardening activity",
+    "text": "If comfortable and accessible, consider a gardening task that interests you.",
+    "tags": "movement garden gardening plants outdoor task",
+    "source": "NHS — Being active",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "movement_choice",
+    "topic": "movement",
+    "title": "Choose an activity you enjoy",
+    "text": "If comfortable and accessible, choose an activity you enjoy that fits your daily routine.",
+    "tags": "movement enjoy enjoyable choice fits daily routine",
+    "source": "NHS — Being active",
+    "source_url": "https://www.nhs.uk/every-mind-matters/mental-wellbeing-tips/be-active-for-your-mental-health/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "balance",
+    "topic": "balance",
+    "title": "Choose a small break",
+    "text": "If you want, pause one screen-based task for a few minutes and choose a restful break.",
+    "tags": "study screen pause break rest",
+    "source": "Cornell Learning Strategies Center — Multitasking",
+    "source_url": "https://lsc.cornell.edu/managing-time-and-stress/the-perils-of-multitasking/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "balance_timer",
+    "topic": "balance",
+    "title": "Plan a timed study session",
+    "text": "If you want, try a timed study session with a planned break afterwards.",
+    "tags": "study timer timed pomodoro session focus break",
+    "source": "Cornell Learning Strategies Center — Multitasking",
+    "source_url": "https://lsc.cornell.edu/managing-time-and-stress/the-perils-of-multitasking/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "balance_single",
+    "topic": "balance",
+    "title": "Focus on one task",
+    "text": "If you want, choose one assignment to work on before switching to another task.",
+    "tags": "study multitasking switching tasks assignment focus single",
+    "source": "Cornell Learning Strategies Center — Multitasking",
+    "source_url": "https://lsc.cornell.edu/managing-time-and-stress/the-perils-of-multitasking/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "balance_notifications",
+    "topic": "balance",
+    "title": "Set distractions aside",
+    "text": "If you want, silence nonessential notifications while you work on one study task.",
+    "tags": "study notifications distraction messages phone interruptions",
+    "source": "Cornell Learning Strategies Center — Multitasking",
+    "source_url": "https://lsc.cornell.edu/managing-time-and-stress/the-perils-of-multitasking/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  },
+  {
+    "id": "balance_between",
+    "topic": "balance",
+    "title": "Plan a break between tasks",
+    "text": "If you want, take a brief break between assignments before beginning the next task.",
+    "tags": "study between assignments tasks break transition",
+    "source": "Cornell Learning Strategies Center — Multitasking",
+    "source_url": "https://lsc.cornell.edu/managing-time-and-stress/the-perils-of-multitasking/",
+    "source_accessed": "2026-10-14",
+    "provenance": "Project-authored adaptation of related guidance; not a quotation or clinical validation."
+  }
+]

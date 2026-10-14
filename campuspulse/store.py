@@ -1,9 +1,10 @@
 """SQL demo analytics. Only generated fictional rows may be persisted here."""
 import sqlite3
+from contextlib import closing
 from .data import synthetic_data
 
 def demo_summary():
-    with sqlite3.connect(':memory:') as connection:
+    with closing(sqlite3.connect(':memory:')) as connection:
         synthetic_data().to_sql('demo_weeks', connection, index=False)
         rows = connection.execute('''
             SELECT week, COUNT(DISTINCT student_id),

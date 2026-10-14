@@ -1,0 +1,294 @@
+{
+  "evaluation_kind": "authored_fixed_query_regression_set",
+  "cards": 20,
+  "queries": 20,
+  "corpus_sha256": "4bba6863635393e05db8c9bc8dcd806a80ddc4543ec19904ff7ab36b69b5ce1e",
+  "hit_at_1": 0.9,
+  "hit_at_3": 1.0,
+  "mrr_at_3": 0.95,
+  "cases": [
+    {
+      "query": "I miss my friends and want to send a message",
+      "expected_ids": [
+        "connection"
+      ],
+      "retrieved_ids": [
+        "connection",
+        "movement_group",
+        "balance_between"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "My parents live far away; I want a video call",
+      "expected_ids": [
+        "connection_video"
+      ],
+      "retrieved_ids": [
+        "connection_video",
+        "balance_between",
+        "balance_single"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I eat lunch alone and could invite a classmate",
+      "expected_ids": [
+        "connection_meal"
+      ],
+      "retrieved_ids": [
+        "connection_meal"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I want to listen when a friend needs company",
+      "expected_ids": [
+        "connection_listen"
+      ],
+      "retrieved_ids": [
+        "connection_listen",
+        "connection_meal",
+        "connection"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "Where could I try community volunteering?",
+      "expected_ids": [
+        "connection_volunteer"
+      ],
+      "retrieved_ids": [
+        "connection_volunteer",
+        "connection",
+        "movement_garden"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "My bedtime schedule changes every day",
+      "expected_ids": [
+        "routine"
+      ],
+      "retrieved_ids": [
+        "routine",
+        "routine_read",
+        "routine_screen"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I keep scrolling my phone before bed",
+      "expected_ids": [
+        "routine_screen"
+      ],
+      "retrieved_ids": [
+        "routine_screen",
+        "routine_list",
+        "balance_notifications"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I would like to read a book before sleep",
+      "expected_ids": [
+        "routine_read"
+      ],
+      "retrieved_ids": [
+        "routine_read",
+        "connection",
+        "connection_meal"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I keep thinking about tomorrow’s tasks in bed",
+      "expected_ids": [
+        "routine_list"
+      ],
+      "retrieved_ids": [
+        "routine_list",
+        "balance_between",
+        "routine_screen"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "My dorm room is noisy and too bright for sleep",
+      "expected_ids": [
+        "routine_room"
+      ],
+      "retrieved_ids": [
+        "routine_room",
+        "routine",
+        "routine_read"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I want a short walk outdoors",
+      "expected_ids": [
+        "movement"
+      ],
+      "retrieved_ids": [
+        "movement",
+        "connection",
+        "routine_list"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I want to join a walking club with other people",
+      "expected_ids": [
+        "movement_group"
+      ],
+      "retrieved_ids": [
+        "movement_group",
+        "connection",
+        "movement"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I need a small manageable activity goal to start",
+      "expected_ids": [
+        "movement_goal"
+      ],
+      "retrieved_ids": [
+        "movement_goal",
+        "connection",
+        "movement_group"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I would like to do a gardening task",
+      "expected_ids": [
+        "movement_garden"
+      ],
+      "retrieved_ids": [
+        "movement_garden",
+        "balance_single",
+        "balance_between"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I need an enjoyable activity that fits my daily routine",
+      "expected_ids": [
+        "movement_choice"
+      ],
+      "retrieved_ids": [
+        "movement_choice",
+        "routine",
+        "connection_volunteer"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I need to pause my screen task for a break",
+      "expected_ids": [
+        "balance"
+      ],
+      "retrieved_ids": [
+        "balance",
+        "balance_between",
+        "routine_screen"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I want to use a pomodoro timer while studying",
+      "expected_ids": [
+        "balance_timer"
+      ],
+      "retrieved_ids": [
+        "balance_timer",
+        "balance_between",
+        "balance_single"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "I keep switching between assignments and multitasking",
+      "expected_ids": [
+        "balance_single"
+      ],
+      "retrieved_ids": [
+        "balance_single",
+        "balance_between"
+      ],
+      "hit_at_1": true,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 1.0
+    },
+    {
+      "query": "Notifications keep interrupting my study session",
+      "expected_ids": [
+        "balance_notifications"
+      ],
+      "retrieved_ids": [
+        "balance_timer",
+        "balance_notifications",
+        "balance_between"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 0.5
+    },
+    {
+      "query": "I want a break between one assignment and the next",
+      "expected_ids": [
+        "balance_between"
+      ],
+      "retrieved_ids": [
+        "balance_single",
+        "balance_between",
+        "balance"
+      ],
+      "hit_at_1": false,
+      "hit_at_3": true,
+      "reciprocal_rank_at_3": 0.5
+    }
+  ],
+  "limitations": [
+    "Queries and expected IDs were authored by the project builder; not independent or representative user evaluation.",
+    "Labels assume one preferred card, although several cards may be relevant.",
+    "Lexical overlap measures retrieval, not health benefit or semantic comprehension.",
+    "No model call is required. New external queries and human judgments are still needed."
+  ]
+}

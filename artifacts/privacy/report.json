@@ -1,6 +1,6 @@
 {
-  "generated_at_utc": "2026-10-14T19:56:14.036395+00:00",
-  "code_fingerprint": "1d675bdfb0c7fbecee0503564f699cba73b0d0a275513637082e8127c8dca25e",
+  "generated_at_utc": "2026-10-14T21:05:12.013059+00:00",
+  "code_fingerprint": "414834babe43e46a2d3c9e2d3caf0bbbc3420e40e3082f31c668b37129a345d8",
   "scope": "Automated checks of the supplied application code and tested paths. Not a device-wide audit.",
   "passed": true,
   "tests_run": 11,

@@ -57,7 +57,7 @@ class DataTests(unittest.TestCase):
         self.assertEqual(result['mode'], 'retrieval_fallback')
 
     def test_llm_valid_response_and_minimal_payload(self):
-        body = json.dumps({'message': {'content': 'If you would like, send a friend a short message.'}}).encode()
+        body = json.dumps({'message': {'content': 'If you would like, send one friend a short message or join a campus activity you enjoy.'}}).encode()
         with patch.dict(os.environ, {'OLLAMA_MODEL': 'test'}), patch(
                 'campuspulse.coach.open_local_llm', return_value=io.BytesIO(body)) as request:
             result = support(EXAMPLE, True)

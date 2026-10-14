@@ -93,7 +93,7 @@ class PrivacyTests(unittest.TestCase):
     def test_llm_payload_omits_identifiers_values_and_scores(self):
         payload={**self.values,'conversation_event_minutes':123.456,
                  'student_id':'NEVER_SEND_THIS_ID','prediction':77.123}
-        body=json.dumps({'message':{'content':'If you would like, send a friend a short message.'}}).encode()
+        body=json.dumps({'message':{'content':'If you would like, send one friend a short message or join a campus activity you enjoy.'}}).encode()
         with patch.dict(os.environ,{'OLLAMA_MODEL':'fixture-local'}), patch('campuspulse.coach.open_local_llm',return_value=io.BytesIO(body)) as transport:
             result=support(payload,True,SCHEMA)
         self.assertEqual(result['mode'],'local_llm')
