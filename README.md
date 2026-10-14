@@ -61,6 +61,17 @@ These findings support the change to approved-wording selection. The completed r
 
 This is a small, AI-assisted project-author review, not independent or clinical validation. It evaluates the historical rewriting version. Broader live evaluation of the updated selection version remains pending.
 
+### Updated-version live check
+
+A subsequent 12-request fixed-topic run reported 12/12 local LLM
+responses, 12/12 expected source matches, and a median response time
+of 0.918 seconds. The opt-out response check passed.
+
+Inspection of the saved replies found complete routine sentences
+and preserved comfort/accessibility conditions in all movement replies.
+These are limited smoke-test results; human review of this run remains
+pending, and varied-query live evaluation is still needed.
+
 ## Run a synthetic demonstration
 
 Python 3.13 is the tested Windows setup. In PowerShell:
