@@ -1,5 +1,5 @@
 # CampusPulse
-
+[![Python checks](https://github.com/aakankshya-cloud/CampusPulse/actions/workflows/checks.yml/badge.svg)](https://github.com/aakankshya-cloud/CampusPulse/actions/workflows/checks.yml)
 A Python research dashboard exploring relationships between student routine summaries and loneliness questionnaire scores.
 
 - **ML:** real StudentLife data, participant-separated evaluation and model comparison.
