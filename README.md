@@ -7,7 +7,7 @@ A Python research dashboard exploring relationships between student routine summ
 - **ML:** real StudentLife data, participant-separated evaluation and model comparison.
 - **Explainability:** SHAP contributions for the selected Ridge model.
 - **AI:** TF-IDF retrieval over 20 sourced cards and optional local Ollama selection of approved wording.
-- **Engineering:** HTTP APIs, 69 passing Windows tests and a GitHub Actions workflow.
+- **Engineering:** HTTP APIs, 74 passing Windows tests and a GitHub Actions workflow.
 - **Scope:** educational research prototype; not a clinical assessment or reliable loneliness detector.
 
 ## What the app does
@@ -32,7 +32,8 @@ The support suggestion is separate from the predicted questionnaire score. Unres
 | Original holdout MAE | Ridge 9.91 versus mean baseline 9.20 |
 | Development-only nested selection MAE | 10.248 versus baseline 9.856 |
 | Selected configuration | Ridge using the original four features |
-| Windows automated tests | 69 passed |
+| Windows automated tests | 74.\.venv\Scripts\python.exe analyze_studentlife_sql.py
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v passed |
 | Retrieval evaluation | 20 hand-authored queries |
 | Retrieval Hit@1 / Hit@3 | 90% / 100% |
 | Retrieval MRR@3 | 0.950 |
@@ -135,6 +136,25 @@ The local LLM selects approved wording from retrieved cards. Unapproved output f
 The support feature searches 20 project-authored cards linked to NHS and Cornell guidance. Optional topic filtering narrows the search.
 
 Cards are adaptations of general guidance, not quotations or evidence that CampusPulse improves wellbeing. Source links are displayed with suggestions.
+
+## SQL analysis
+
+Prepared StudentLife summaries are loaded into a local SQLite database
+using development participants only: 27 included, with 7 held out.
+
+Four queries demonstrate JOIN, GROUP BY, CASE and HAVING to inspect
+observation coverage, missing prepared values and feature summaries.
+Days without recorded observations are not assumed to mean sensor
+failure or zero activity.
+
+Run after preparing StudentLife data:
+
+```powershell
+.\.venv\Scripts\python.exe analyze_studentlife_sql.py
+```
+
+The database and query outputs remain in the Git-ignored
+`data/private_studentlife/sql/` directory.
 
 ## Verification
 
