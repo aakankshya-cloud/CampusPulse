@@ -1,3 +1,4 @@
+
 """Local, single-user demonstration server. Do not expose it to the public internet."""
 import json
 import argparse
@@ -94,60 +95,3 @@ def make_handler(bundle, model_dir=None):
                 self.send_bytes(image_path.read_bytes(),'image/png')
             elif path == '/shap/global.png':
                 image_path = shap_dir / 'global.png' if shap_dir else None
-                if not bundle.get('shap_state') or image_path is None or not image_path.is_file():
-                    return self.json({'error':'Run add_shap.py first.'},404)
-                self.send_bytes(image_path.read_bytes(),'image/png')
-            elif path in ['/eda/relationships.png', '/eda/coverage.png']:
-                summary = exploration()
-                image_path = eda_dir / path.rsplit('/', 1)[-1] if eda_dir else None
-                if summary is None or not image_path.is_file():
-                    return self.json({'error': 'Run explore_studentlife.py for this model dataset first.'}, 404)
-                self.send_bytes(image_path.read_bytes(), 'image/png')
-            else:
-                self.json({'error': 'Not found'}, 404)
-
-        def do_POST(self):
-            if not self.valid_host():
-                return self.json({'error':'Unexpected host for a local application.'},403)
-            # Browser cross-origin requests cannot submit behavior data.
-            origin = self.headers.get('Origin')
-            if origin and origin != 'http://' + self.headers.get('Host', ''):
-                return self.json({'error': 'Cross-origin requests are disabled.'}, 403)
-            if self.headers.get('Content-Type', '').split(';')[0] != 'application/json':
-                return self.json({'error': 'Use application/json.'}, 415)
-            try:
-                length = int(self.headers.get('Content-Length', '0'))
-                if not 0 < length <= 8192:
-                    return self.json({'error': 'Invalid request size.'}, 413)
-                payload = json.loads(self.rfile.read(length))
-                if not isinstance(payload, dict):
-                    raise ValueError('Expected a JSON object.')
-                if self.path == '/api/predict':
-                    self.json(score(bundle, payload))
-                elif self.path == '/api/support':
-                    self.json(support(payload, payload.get('consent') is True,
-                                      bundle['report'].get('feature_schema')))
-                else:
-                    self.json({'error': 'Not found'}, 404)
-            except (ValueError, TypeError, KeyError) as error:
-                self.json({'error': str(error)}, 400)
-
-    return Handler
-
-def main():
-    parser = argparse.ArgumentParser()
-    default = ROOT / 'artifacts/studentlife' if (ROOT / 'artifacts/studentlife/model.joblib').exists() else ROOT / 'artifacts'
-    parser.add_argument('--model-dir', type=Path, default=default)
-    args = parser.parse_args()
-    path = args.model_dir / 'model.joblib'
-    if not path.exists():
-        raise SystemExit('First run: python train.py --demo')
-    # Load only the model produced by your own training script. Pickle/joblib is executable.
-    bundle = joblib.load(path)
-    port = int(os.getenv('PORT', '8000'))
-    address = os.getenv('BIND_ADDRESS', '127.0.0.1')
-    print(f'CampusPulse: http://{address}:{port} — {bundle["report"]["source"]} mode', flush=True)
-    ThreadingHTTPServer((address, port), make_handler(bundle, args.model_dir)).serve_forever()
-
-if __name__ == '__main__':
-    main()
