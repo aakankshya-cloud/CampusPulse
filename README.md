@@ -61,16 +61,25 @@ These findings support the change to approved-wording selection. The completed r
 
 This is a small, AI-assisted project-author review, not independent or clinical validation. It evaluates the historical rewriting version. Broader live evaluation of the updated selection version remains pending.
 
-### Updated-version live check
+### Updated-version evaluation
 
-A subsequent 12-request fixed-topic run reported 12/12 local LLM
-responses, 12/12 expected source matches, and a median response time
-of 0.918 seconds. The opt-out response check passed.
+The updated 12-request run reported 12/12 local LLM responses,
+12/12 expected source matches and a median response time of 0.918
+seconds. The opt-out response check passed.
 
-Inspection of the saved replies found complete routine sentences
-and preserved comfort/accessibility conditions in all movement replies.
-These are limited smoke-test results; human review of this run remains
-pending, and varied-query live evaluation is still needed.
+Project-author review, with AI assistance explaining the rubric,
+rated all 12 replies relevant, faithful, free of added unsupported
+health claims, and grammatically complete.
+
+Faithfulness ratings increased from 9/12 in the earlier rewriting
+run to 12/12 in the updated run. Both used four fixed topics repeated
+three times. The updated workflow selects approved wording rather
+than freely rewriting suggestions. This small comparison is not
+independent validation or evidence of general reliability.
+
+[Completed updated-run review](artifacts/llm_evaluation/human_review_20261014T213917393559Z.json)
+
+Varied-query evaluation remains pending.
 
 ## Run a synthetic demonstration
 

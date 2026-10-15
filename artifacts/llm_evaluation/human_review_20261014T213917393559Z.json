@@ -1,0 +1,327 @@
+{
+  "generated_at_utc": "2026-10-14T21:39:17.392508+00:00",
+  "evaluation_kind": "live_fixed_topic_smoke_test",
+  "source": "studentlife_nested_cv",
+  "app_code_sha256": {
+    "campuspulse/coach.py": "7acb8a40bd5ec9e468d15f8abbeefe2b41a576ffe947b5be930cbdf94da29e3f",
+    "campuspulse/privacy.py": "b24a29e82f2810f74d4da9a692bdecc0644cd691cbee8f6d80330fef7d063145",
+    "server.py": "35880c17f871cad8126b4fdda44760e0a2a26be9e87872aa51aad6cb43b58103"
+  },
+  "total_requests": 12,
+  "mode_counts": {
+    "local_llm": 12
+  },
+  "local_llm_rate": 1,
+  "local_llm_median_seconds": 0.918,
+  "retrieval_match_count": 12,
+  "consent_opt_out": {
+    "observed_mode": "disabled",
+    "passed": true,
+    "scope": "HTTP response only; no transport-call observation in this live run."
+  },
+  "cases": [
+    {
+      "focus": "connection",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+      "source_ids": [
+        "connection"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 5.279
+    },
+    {
+      "focus": "routine",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If it suits you, try a consistent wind-down time and notice how your routine feels this week.",
+      "source_ids": [
+        "routine"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.199
+    },
+    {
+      "focus": "movement",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy.",
+      "source_ids": [
+        "movement"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.347
+    },
+    {
+      "focus": "balance",
+      "attempt": 1,
+      "mode": "local_llm",
+      "response": "If you would like, pause one screen-based task for a few minutes and choose a restful break.",
+      "source_ids": [
+        "balance"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": false,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 2.632
+    },
+    {
+      "focus": "connection",
+      "attempt": 2,
+      "mode": "local_llm",
+      "response": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+      "source_ids": [
+        "connection"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.813
+    },
+    {
+      "focus": "routine",
+      "attempt": 2,
+      "mode": "local_llm",
+      "response": "If it suits you, try a consistent wind-down time and notice how your routine feels this week.",
+      "source_ids": [
+        "routine"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.901
+    },
+    {
+      "focus": "movement",
+      "attempt": 2,
+      "mode": "local_llm",
+      "response": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy.",
+      "source_ids": [
+        "movement"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.745
+    },
+    {
+      "focus": "balance",
+      "attempt": 2,
+      "mode": "local_llm",
+      "response": "If you would like, pause one screen-based task for a few minutes and choose a restful break.",
+      "source_ids": [
+        "balance"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": false,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.909
+    },
+    {
+      "focus": "connection",
+      "attempt": 3,
+      "mode": "local_llm",
+      "response": "If you would like, send one friend a short message or join a campus activity you enjoy.",
+      "source_ids": [
+        "connection"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.837
+    },
+    {
+      "focus": "routine",
+      "attempt": 3,
+      "mode": "local_llm",
+      "response": "If it suits you, try a consistent wind-down time and notice how your routine feels this week.",
+      "source_ids": [
+        "routine"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.927
+    },
+    {
+      "focus": "movement",
+      "attempt": 3,
+      "mode": "local_llm",
+      "response": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy.",
+      "source_ids": [
+        "movement"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 14,
+      "exactly_matches_authored_card": true,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.743
+    },
+    {
+      "focus": "balance",
+      "attempt": 3,
+      "mode": "local_llm",
+      "response": "If you would like, pause one screen-based task for a few minutes and choose a restful break.",
+      "source_ids": [
+        "balance"
+      ],
+      "expected_source_retrieved": true,
+      "word_count": 17,
+      "exactly_matches_authored_card": false,
+      "human_review": {
+        "topic_relevant": true,
+        "grounded_in_card": true,
+        "no_unsupported_health_claims": true,
+        "clear_and_complete": true,
+        "notes": ""
+      },
+      "elapsed_seconds": 0.942
+    }
+  ],
+  "limitations": [
+    "Four fixed topic choices repeated with example median inputs; not independent varied scenarios.",
+    "Mode measures accepted generation, not quality, safety or clinical benefit.",
+    "Matching source ID tests retrieval; human review is required for generated-text relevance and grounding.",
+    "Latency includes HTTP, model loading and generation; first calls can be slower.",
+    "The same prompt/model is used throughout. This does not demonstrate prompt optimization.",
+    "Model identity and weights are not independently verified by this script.",
+    "Reports intentionally save these fictional test replies; interactive user scenarios remain separate."
+  ],
+  "human_review_metadata": {
+    "reviewer_label": "Aakankshya Dash - Project Author",
+    "reviewer_type": "self_reported_human_project_review",
+    "independent_expert_review": false,
+    "reviewed_at_utc": "2026-10-15T11:28:11.136Z",
+    "source_filename": "report_20261014T213917393559Z.json",
+    "source_file_sha256": "c5498de6744070c7ee2417e4705a8e080672be2c5435e357e39767c4c148aae3",
+    "architecture_scope": "updated_run_saved_outputs",
+    "ai_assistance": "AI helped explain the rubric; ratings chosen by project author",
+    "rubric": "Topic relevance, faithfulness to provided card including conditions, absence of added unsupported health claims, and clear complete wording. Clarity was not scored in the earlier review. Not clinical validation."
+  },
+  "source_cards_for_review": {
+    "connection": {
+      "id": "connection",
+      "text": "If you would like, send one friend a short message or join a campus activity you enjoy."
+    },
+    "routine": {
+      "id": "routine",
+      "text": "If it suits you, try a consistent wind-down time and notice how your routine feels this week."
+    },
+    "movement": {
+      "id": "movement",
+      "text": "If comfortable and accessible, consider a short walk or another gentle activity you enjoy."
+    },
+    "balance": {
+      "id": "balance",
+      "text": "If you want, pause one screen-based task for a few minutes and choose a restful break."
+    }
+  },
+  "human_review_summary": {
+    "total_cases": 12,
+    "criteria": {
+      "topic_relevant": {
+        "yes": 12,
+        "no": 0,
+        "uncertain": 0
+      },
+      "grounded_in_card": {
+        "yes": 12,
+        "no": 0,
+        "uncertain": 0
+      },
+      "no_unsupported_health_claims": {
+        "yes": 12,
+        "no": 0,
+        "uncertain": 0
+      },
+      "clear_and_complete": {
+        "yes": 12,
+        "no": 0,
+        "uncertain": 0
+      }
+    }
+  }
+}
