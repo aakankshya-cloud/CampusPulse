@@ -32,4 +32,8 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/aakankshya-cloud/campuspulse:latest
+          
+          tags: |
+            ghcr.io/aakankshya-cloud/campuspulse:latest
+            ghcr.io/aakankshya-cloud/campuspulse:2883c87
+
