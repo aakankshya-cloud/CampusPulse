@@ -1,0 +1,24 @@
+
+FROM python:3.13-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Application runtime
+COPY server.py .
+COPY campuspulse/ ./campuspulse/
+COPY web/ ./web/
+COPY configs/support_cards.json ./configs/support_cards.json
+
+# Research model and matching visualizations
+COPY deployment/research/ ./artifacts/studentlife_v2/
+
+# Container runtime settings
+ENV BIND_ADDRESS=0.0.0.0
+ENV PORT=8000
+
+EXPOSE 8000
+
+CMD ["python", "server.py", "--model-dir", "/app/artifacts/studentlife_v2"]
