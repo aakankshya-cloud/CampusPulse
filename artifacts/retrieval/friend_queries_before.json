@@ -1,0 +1,76 @@
+{
+  "provenance": "User reports friend authored queries without seeing cards",
+  "scope": "Local retrieval only; no live LLM; no independently assigned relevance labels",
+  "corpus_sha256": "4bba6863635393e05db8c9bc8dcd806a80ddc4543ec19904ff7ab36b69b5ce1e",
+  "retriever_sha256": "d7be43f1194466039f815111217a63a1ccd322c7dcbfce26d9e930170d037fc1",
+  "cases": [
+    {
+      "id": 1,
+      "query": "my exams start in 3 weeks and i have no idea where to even start",
+      "initial_top3": [
+        "movement_goal"
+      ]
+    },
+    {
+      "id": 2,
+      "query": "can you make me a study timetable for the week? i have classes 9-3 and i\u2019m free after that",
+      "initial_top3": [
+        "routine",
+        "connection_listen",
+        "balance_timer"
+      ]
+    },
+    {
+      "id": 3,
+      "query": "i keep procrastinating and then panic the night before a deadline",
+      "initial_top3": []
+    },
+    {
+      "id": 4,
+      "query": "how do i focus when my phone is right there",
+      "initial_top3": [
+        "balance_single",
+        "routine_screen",
+        "balance_notifications"
+      ]
+    },
+    {
+      "id": 5,
+      "query": "i have 4 assignments due friday and i\u2019m so overwhelmed",
+      "initial_top3": [
+        "balance_between"
+      ]
+    },
+    {
+      "id": 6,
+      "query": "what\u2019s a good way to remember organic chemistry reactions",
+      "initial_top3": []
+    },
+    {
+      "id": 7,
+      "query": "i\u2019ve been sleeping at 3am every day and can\u2019t wake up for 8am lectures",
+      "initial_top3": []
+    },
+    {
+      "id": 8,
+      "query": "feeling really anxious about my presentation tomorrow",
+      "initial_top3": [
+        "routine_list"
+      ]
+    },
+    {
+      "id": 9,
+      "query": "remind me to submit my lab report by 6pm",
+      "initial_top3": []
+    },
+    {
+      "id": 10,
+      "query": "i studied for 5 hours today but it feels like nothing went in",
+      "initial_top3": [
+        "routine",
+        "connection",
+        "connection_meal"
+      ]
+    }
+  ]
+}

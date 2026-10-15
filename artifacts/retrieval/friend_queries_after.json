@@ -1,0 +1,125 @@
+{
+  "evaluation_kind": "friend_authored_queries_reused_for_development",
+  "provenance": "User reports friend authored queries without seeing cards",
+  "corpus_sha256": "4bba6863635393e05db8c9bc8dcd806a80ddc4543ec19904ff7ab36b69b5ce1e",
+  "retriever_sha256": "7111641b331aa8eb74e587862770cbd8c576700353845353e8dfb4cc790c6be2",
+  "limitations": [
+    "Queries were inspected before changes: post-change results are regression evidence, not held-out performance.",
+    "Scope rules are lexical and incomplete; general intent understanding is not demonstrated.",
+    "No independent relevance labels or accuracy metric; no live LLM calls."
+  ],
+  "cases": [
+    {
+      "id": 1,
+      "query": "my exams start in 3 weeks and i have no idea where to even start",
+      "initial_top3": [
+        "movement_goal"
+      ],
+      "current_top3": [],
+      "scope_message": "Exam preparation and presentation coaching are not covered by this collection. You can choose a routine or study-break topic separately.",
+      "top_text": null
+    },
+    {
+      "id": 2,
+      "query": "can you make me a study timetable for the week? i have classes 9-3 and i’m free after that",
+      "initial_top3": [
+        "routine",
+        "connection_listen",
+        "balance_timer"
+      ],
+      "current_top3": [],
+      "scope_message": "This app offers short routine suggestions; it cannot build a personalized study timetable.",
+      "top_text": null
+    },
+    {
+      "id": 3,
+      "query": "i keep procrastinating and then panic the night before a deadline",
+      "initial_top3": [],
+      "current_top3": [
+        "balance_single",
+        "balance_timer",
+        "balance_notifications"
+      ],
+      "scope_message": null,
+      "top_text": "If you want, choose one assignment to work on before switching to another task."
+    },
+    {
+      "id": 4,
+      "query": "how do i focus when my phone is right there",
+      "initial_top3": [
+        "balance_single",
+        "routine_screen",
+        "balance_notifications"
+      ],
+      "current_top3": [
+        "balance_notifications",
+        "balance_single",
+        "routine_screen"
+      ],
+      "scope_message": null,
+      "top_text": "If you want, silence nonessential notifications while you work on one study task."
+    },
+    {
+      "id": 5,
+      "query": "i have 4 assignments due friday and i’m so overwhelmed",
+      "initial_top3": [
+        "balance_between"
+      ],
+      "current_top3": [
+        "balance_between"
+      ],
+      "scope_message": null,
+      "top_text": "If you want, take a brief break between assignments before beginning the next task."
+    },
+    {
+      "id": 6,
+      "query": "what’s a good way to remember organic chemistry reactions",
+      "initial_top3": [],
+      "current_top3": [],
+      "scope_message": "Subject tutoring and memory strategies are not covered by this collection. No matching advice is available here.",
+      "top_text": null
+    },
+    {
+      "id": 7,
+      "query": "i’ve been sleeping at 3am every day and can’t wake up for 8am lectures",
+      "initial_top3": [],
+      "current_top3": [
+        "routine_read",
+        "routine",
+        "routine_screen"
+      ],
+      "scope_message": null,
+      "top_text": "If it suits you, read something you enjoy as part of your bedtime routine."
+    },
+    {
+      "id": 8,
+      "query": "feeling really anxious about my presentation tomorrow",
+      "initial_top3": [
+        "routine_list"
+      ],
+      "current_top3": [],
+      "scope_message": "Exam preparation and presentation coaching are not covered by this collection. You can choose a routine or study-break topic separately.",
+      "top_text": null
+    },
+    {
+      "id": 9,
+      "query": "remind me to submit my lab report by 6pm",
+      "initial_top3": [],
+      "current_top3": [],
+      "scope_message": "This app cannot schedule reminders or send notifications. Use a calendar or alarm app for that request.",
+      "top_text": null
+    },
+    {
+      "id": 10,
+      "query": "i studied for 5 hours today but it feels like nothing went in",
+      "initial_top3": [
+        "routine",
+        "connection",
+        "connection_meal"
+      ],
+      "current_top3": [],
+      "scope_message": "Subject tutoring and memory strategies are not covered by this collection. No matching advice is available here.",
+      "top_text": null
+    }
+  ]
+}
